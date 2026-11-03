@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Formularios</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+    <form action="validar.php" method="get">
+         <label> Vamos a probar diferentes valores de type de HTML5 para la etiqueta input <br><br> 
+        <fieldset> 
+             </label><strong> Para datos personales</strong>
+        <br><br>
+        <label for="telefono">Teléfono</label>
+        <input type="tel" name="telefono" placeholder="(9 números)" maxlength="9" size="9" /> <br>
+        <label for="correo" >Correo electrónico</label>
+        <input type="email" name="correo" placeholder="(ejemplo@dominio.com)"size="50" /> </p> </fieldset> <br>
+        
+        <fieldset>
+            <strong> Para valores numéricos</strong><br><br>
+        <label for="numero">Número de personas</label>
+        <input type="number" name="numero" min="1" max="20" step="1" value="1" /> <br>
+        <label for="rango">Desplace la barra para indicar puntuacion</label>
+        <input type="range" name="rango" min="0" max="10" step="1" value="0" /> </fieldset> <br><br> 
+
+        <fieldset>
+            <strong>Url y búsqueda</strong><br><br>
+        <label for="url">Página web</label>
+        <input type="url" name="url" /> <br>
+        <label for="busqueda">¿Qué te interesaría buscar?</label>
+        <input type="search" name="busqueda" /> </fieldset> <br><br>
+        
+        <fieldset>
+            <strong>Otros tipos</strong><br><br>
+        <label for="color">Color</label>
+        <input type="color" name="color" /> </fieldset> <br><br>
+
+        <fieldset>
+            <strong>Para fechas</strong><br><br>
+        <label for="fecha">Selecciona un día(Hasta fin de año)</label>
+        <input type="date" name="fecha" /> <br>
+        <label for="hora">Selecciona una hora</label>
+        <input type="time" name="hora" /> <br>
+        <label for="mes">Selecciona un mes(Hasta junio del 2020)</label>
+        <input type="month" name="mes" /> <br>
+        <label for="semana">Selecciona una semana(Hasta junio del 2020)</label>
+        <input type="week" name="semana" /> <br>
+        <label for="fechaHora">Selecciona fecha y hora</label>
+        <input type="datetime-local" name="fechaHora" /> </fieldset><br>
+
+        <input type="submit" value="Enviar" img src="XML.png"  />
+        <input type="reset" value="Limpiar" />
+    </form>
